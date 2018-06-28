@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from app.models import User, Skills
 from django.contrib.auth.decorators import login_required
+from app.forms import ModelForm
 
 def home(request):
     return redirect('index/')
