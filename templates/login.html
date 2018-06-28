@@ -11,29 +11,76 @@
 
     <title>Networx Home</title>
 </head>
+
 <body>
 
-<div class="col-xs-12 text-center" id="header">
-    <h1>Networx</h1>
+  <!-- Header -->
+  <div class="row" id="header">
+
+    <div class="col-xs-12 text-center" id="header">
+      <h1>Networx</h1>
+    </div>
+
+  </div>
+
+<!--
+  <div class="row">
+
+      <div class="col-xs-12" id="loginForm">
+          <h4> Log In </h4>
+          <div id="username_box">
+              <input id="ubox" type="text" name="username" placeholder="Username" required>
+          </div>
+          <div id="password_box">
+              <input id="pbox" type="password" name="password" placeholder="Password" required>
+          </div>
+          <div class="login">
+              <input id="login_btn" type="submit" value="Submit">
+          </div>
+      </div>
+
+      <div class="col-xs-12" id="signupBtn">
+          <h4> Sign Up! </h4>
+          <button id="signup_btn" name="signup_btn">Sign Up!</button>
+      </div>
+
+  </div>
+-->
+
+
+<div class="col-xs-12 text-center" >
+
+<h3>Login</h3>
+
+<div class="row text-center">
+
+  <div class="form-group col-xs-4">
+    <label class="control-label" for="usr">Username</label>
+    <input type="email" maxlength="64" class="form-control" id="emailAddress"
+    placeholder="Enter username" name="userName" required>
+  </div>
+
 </div>
 
-<div class="main">
-    <div class="login">
-        <h3> Log In </h3>
-                <div id="username_box">
-                    <input id="ubox" type="text" name="username" placeholder="Username" required>
-                </div>
-                <div id="password_box">
-                    <input id="pbox" type="password" name="password" placeholder="Password" required>
-                </div>
-                <div class="login">
-                    <input id="login_btn" type="submit" value="Submit">
-                </div>
-    </div>
-    <div class="signup">
-        <h3> Sign Up! </h3>
-            <button id="signup_btn" name="signup_btn">Sign Up!</button>
-    </div>
+<div class="row text-center">
+
+  <div class="form-group col-xs-4">
+    <label class="control-label" for="usr">Password</label>
+    <input type="password" maxlength="255" class="form-control" id="passwordUser"
+    placeholder="Enter password" name="passwordUser" required>
+  </div>
+
+</div>
+
+</div>
+
+<div class="row text-center">
+
+  <div class="col-xs-12" id="signupBtn">
+      <h4> Sign Up! </h4>
+      <button class="btn btn-primary">Sign Up!</button>
+  </div>
+
 </div>
 
 </body>
