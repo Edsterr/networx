@@ -1,3 +1,7 @@
+from django.conf.urls import url, include, re_path
+from django.contrib import admin
+from app import views
+
 """networx URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -17,5 +21,7 @@ from django.contrib import admin
 from django.urls import path
 
 urlpatterns = [
+    re_path(r'^$', views.home, name='home'),
+    path('index/', views.index, name='index'),
     path('admin/', admin.site.urls),
 ]
