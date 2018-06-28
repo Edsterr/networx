@@ -1,87 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Login</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../static/css/loginStyle.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    <title>Networx Home</title>
+  <link rel="stylesheet" type="text/css" href="/static/css/loginStyle.css">
+
 </head>
-
 <body>
 
-  <!-- Header -->
-  <div class="row" id="header">
+<!-- Header -->
+<div class="row" id="header">
 
-    <div class="col-xs-12 text-center" id="header">
-      <h1>Networx</h1>
-    </div>
-
-  </div>
-
-<!--
-  <div class="row">
-
-      <div class="col-xs-12" id="loginForm">
-          <h4> Log In </h4>
-          <div id="username_box">
-              <input id="ubox" type="text" name="username" placeholder="Username" required>
-          </div>
-          <div id="password_box">
-              <input id="pbox" type="password" name="password" placeholder="Password" required>
-          </div>
-          <div class="login">
-              <input id="login_btn" type="submit" value="Submit">
-          </div>
-      </div>
-
-      <div class="col-xs-12" id="signupBtn">
-          <h4> Sign Up! </h4>
-          <button id="signup_btn" name="signup_btn">Sign Up!</button>
-      </div>
-
-  </div>
--->
-
-
-<div class="col-xs-12 text-center" >
-
-<h3>Login</h3>
-
-<div class="row text-center">
-
-  <div class="form-group col-xs-4">
-    <label class="control-label" for="usr">Username</label>
-    <input type="email" maxlength="64" class="form-control" id="emailAddress"
-    placeholder="Enter username" name="userName" required>
+  <div class="col-xs-12 text-center" id="header">
+    <h1>Networx</h1>
   </div>
 
 </div>
 
-<div class="row text-center">
-
-  <div class="form-group col-xs-4">
-    <label class="control-label" for="usr">Password</label>
-    <input type="password" maxlength="255" class="form-control" id="passwordUser"
-    placeholder="Enter password" name="passwordUser" required>
+<form action="/action_page.php">
+  <div class="imgcontainer">
+    <img src="pictures/login-avatar.png" alt="Avatar" class="avatar" style="width: 150px; height: 150px;">
   </div>
 
-</div>
+  <div class="container" style="width: 50%;">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
 
-</div>
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
 
-<div class="row text-center">
-
-  <div class="col-xs-12" id="signupBtn">
-      <h4> Sign Up! </h4>
-      <button class="btn btn-primary">Sign Up!</button>
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
   </div>
 
-</div>
+  <div class="container">
+    <button type="button" class="btn btn-primary" style="width:100px;">Register</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
 
 </body>
 </html>
