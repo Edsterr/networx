@@ -12,6 +12,9 @@ def login(request):
 def search(request):
 	return render(request, 'search.html')
 
+def profile(request):
+	return render(request, 'profile.html')
+
 def profile_id_func(request, profile_id):
 	profile_details = User.objects.filter(sid=profile_id)
 	print(profile_details)
