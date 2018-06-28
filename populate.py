@@ -13,11 +13,11 @@ def populate():
   # clear tables
   User.objects.all().delete()
   # insert supplier values
-  greg = [Skills(skillName="Python", skillLevel="13")]
+  # greg = [Skills(skillName="Python", skillLevel="13")]
   users = []
   userNet = User(name='Net Worx', sid='W560370', location="Glasgow-Alhambra", floor=4)
   userNet.save()
-  userNet.skills.set(greg)
+  # userNet.skills.set(greg)
   #userNet.save()
 
 
