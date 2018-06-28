@@ -21,7 +21,7 @@ from django.contrib import admin
 from django.urls import path
 
 urlpatterns = [
-    re_path(r'^$', views.index, name='index'),
-    # path('index/', views.index, name='index'),
+    re_path(r'^$', views.home, name='home'),
+    path('index/', views.index, name='index'),
     path('admin/', admin.site.urls),
 ]
