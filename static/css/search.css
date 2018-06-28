@@ -25,16 +25,17 @@ h4 {
 }
 
 tr {
-width: 100%;
-display: inline-table;
+  width: 100%;
+  display: inline-table;
 }
 
 table{
  height:300px;
 }
+
 tbody{
   overflow-y: scroll;
-  height: 200px;
+  height: 100%;
   width: 100%;
   position: absolute;
 }
@@ -42,5 +43,8 @@ tbody{
 #listTable{
   margin-right: auto;
   margin-left: auto;
-  width: 800px;
+}
+
+#tableColumn{
+  margin-bottom: 2%;
 }
