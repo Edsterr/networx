@@ -19,6 +19,12 @@ h4 {
   color: #d3d3d3;
 }
 
-#formColumn{
-  margin-left: auto;
+#formOuterContainer {
+  width: 100%;
+  text-align: center;
+  padding: 3%;
+}
+
+#formInnerContainer {
+  display: inline-block;
 }

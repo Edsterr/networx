@@ -23,14 +23,19 @@
 
 	</div>
 
-	<div class="col-xs-12" id="formColumn">
+	<div id="formOuterContainer">
+    <div id="formInnerContainer">
 
-		<form method="POST" action="">{% csrf_token %}
-	    	{{ form }}
-	        <div class="form_block">
-	            <input type="submit" value="Save both models"/>
-	        </div>
-		</form>
+			<form method="POST" action="">{% csrf_token %}
+					{% for field in form%}
+						{{field}}
+					{% endfor %}
+		        <div class="form_block">
+		            <input type="submit" value="Save both models"/>
+		        </div>
+			</form>
 
+		</div>
 	</div>
+
 </body>
