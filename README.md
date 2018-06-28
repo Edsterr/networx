@@ -14,3 +14,10 @@ A networking app running django 2.0.6 / python 3.5
     ```
 
 The server should now be running on localhost:8000
+
+### Color Scheme
+
+Blue - #67AECA<br>
+Amethyst - #675682<br>
+Jewel - #5F0F4E<br>
+Rose - #E52A6F<br>
