@@ -1,0 +1,50 @@
+body {
+  background-color: #d3d3d3;
+}
+
+h1{
+   color: #d3d3d3;
+}
+
+h3 {
+ color: #d3d3d3;
+ font-size: 20px;
+}
+
+h4 {
+  color: #5F0F4E;
+}
+
+#header{
+  background-color: #5F0F4E;
+  color: #d3d3d3;
+}
+
+#search-input{
+  margin: 3%;
+}
+
+tr {
+  width: 100%;
+  display: inline-table;
+}
+
+table{
+ height:300px;
+}
+
+tbody{
+  overflow-y: scroll;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+#listTable{
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#tableColumn{
+  margin-bottom: 2%;
+}
