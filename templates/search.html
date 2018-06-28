@@ -1,33 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Search Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- StyleSheets Go here -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    <title>Networx Search</title>
+  <link rel="stylesheet" type="text/css" href="/static/css/search.css">
+
 </head>
-<body>
 
-<div class="main">
-    <div id="outer_search_box">
-        <h3> Search </h3>
-        <select id="skill_select">
-            <!-- Other options go here-->
-            <option value="javascript">JavaScript</option>
-            <option value="java">Java</option>
-            <option value="python">Python</option>
-        </select>
-    </div>
+<body id="profilePage">
 
-    <div id="inner_search_box">
-            <div class="table-container">
-                <div class="row">
-                    <div class="col-lg-3">ELLIOT GLASGOW JAVA INTERMEDIATE</div>
-                </div>
-            </div>
+<!-- Header -->
+<div class="row" id="header">
+
+  <div class="col-xs-12 text-center" id="header">
+    <h1>Networx</h1>
+  </div>
+
+</div>
+
+<!-- Seach box -->
+<div class="container">
+	<div class="row">
+     <div id="search-input">
+        <div class="input-group col-md-12">
+            <input type="text" class="  search-query form-control" placeholder="Search" />
+            <span class="input-group-btn">
+                <button class="btn btn-danger" type="button">
+                    <span class=" glyphicon glyphicon-search"></span>
+                </button>
+            </span>
         </div>
+    </div>
+	</div>
+</div>
+
+<!-- Scroll person list -->
+<div class="row">
+
+  <!-- Spacer (need refactored as bad practice, used due to time constraints) -->
+  <div class="col-xs-2">
+  </div>
+
+  <div class="col-xs-8" id="tableColumn" >
+    <table class="table table-striped" id="listTable">
+      <thead><tr><th><h4>Skill Level</h4></th><th><h4>Floor</h4></th><th><h4>Name</h4></th><th><h4>Meetup Pref</h4></th></tr></thead>
+      <tbody>
+        <tr><td>..</td><td>..</td><td>..</td><td>..</td></tr>
+        <tr><td>..</td><td>..</td><td>..</td><td>..</td></tr>
+        <tr><td>..</td><td>..</td><td>..</td><td>..</td></tr>
+        <tr><td>..</td><td>..</td><td>..</td><td>..</td></tr>
+        <tr><td>..</td><td>..</td><td>..</td><td>..</td></tr>
+        <tr><td>..</td><td>..</td><td>..</td><td>..</td></tr>
+        <tr><td>..</td><td>..</td><td>..</td><td>..</td></tr>
+        <tr><td>..</td><td>..</td><td>..</td><td>..</td></tr>
+        <tr><td>..</td><td>..</td><td>..</td><td>..</td></tr>
+        <tr><td>..</td><td>..</td><td>..</td><td>..</td></tr>
+        <tr><td>..</td><td>..</td><td>..</td><td>..</td></tr>
+        <tr><td>..</td><td>..</td><td>..</td><td>..</td></tr>
+        <tr><td>..</td><td>..</td><td>..</td><td>..</td></tr>
+        <tr><td>..</td><td>..</td><td>..</td><td>..</td></tr>
+        <tr><td>..</td><td>..</td><td>..</td><td>..</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Spacer (need refactored as bad practice, used due to time constraints) -->
+  <div class="col-xs-2">
+  </div>
+
 </div>
 
 </body>
