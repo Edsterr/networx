@@ -1,0 +1,34 @@
+#header{
+  background-color: #5F0F4E;
+}
+
+#avatarImage{
+  padding: 3%;
+  margin-left: 5%;
+}
+
+#personDetails{
+  margin-top: 2%;
+  margin-left: 5%;
+}
+
+#modalButton{
+  margin: 3%;
+}
+
+#skillsColumn{
+  margin-left: 5%;
+  padding: 3%;
+  background-color: #d3d3d3;
+}
+
+#skillButton{
+  width: 100px;
+  margin-top: 3%;
+}
+
+#profileInfo{
+  margin-left: 5%;
+  padding: 3%;
+  background-color: #d3d3d3;
+}
