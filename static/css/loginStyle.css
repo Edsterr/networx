@@ -1,0 +1,61 @@
+html{
+    padding: 0;
+    font-family: sans-serif;
+}
+#big_header{
+    display: block;
+    align-self: center;
+    padding-left: 42%;
+}
+
+.main{
+    position: absolute;
+    display: block;
+    align-self: center;
+    padding-left: 40%;
+}
+
+h3{
+    align-self: center;
+    padding-left: 45%;
+}
+
+.login{
+    position: relative;
+    align-self: center;
+}
+
+#username_box{
+    position: relative;
+    padding-bottom:4%;
+}
+
+#password_box{
+    position: relative;
+    padding-bottom: 4%;
+}
+
+#ubox,#pbox{
+    position: relative;
+    width: 150%;
+    border-color: #67AECA;
+    border-style: groove;
+}
+
+.signup{
+    position: relative;
+    align-self: center;
+    margin-top: 30%;
+}
+
+#login_btn{
+    position: relative;
+    align-self: center;
+    margin-left: 44%;
+}
+
+#signup_btn{
+    position: relative;
+    align-self: center;
+    margin-left: 44%;
+}
