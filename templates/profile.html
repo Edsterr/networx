@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Profile Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+
+  body {
+    background-color: white;
+  }
+
+  </style>
+</head>
+
+<body id="profilePage">
+
+  <div class="row">
+    <div class="col-xs-12 col-sm-2" style="margin-left: 5%; margin-top: 2%;">
+	     <img class="img-rounded img-responsive" src="pictures/avatar-female.png" alt="Profile Image " style="width:150px;height:150px;">
+    </div>
+
+    <div class="col-xs-12 col-sm-7" style="margin-top: 5%;">
+      <h4><strong>Name:</strong> Kate</h4>
+      <h4><strong>Job Level:</strong> Intern</h4>
+    </div>
+
+    <div class="col-xs-12 col-sm-1" style="margin-top: 2%;">
+      <a href="#">
+          <br><button class="btn btn-primary btn-lg" >Meetup</button>
+      </a>
+    </div>
+  </div>
+
+ <div class="row">
+
+   <div class="col-xs-12 col-sm-4" style="margin-left: 5%; padding: 3%;">
+     <button class="btn btn-danger" style="width: 100px;">Python</button>
+     <button class="btn btn-warning" style="width: 100px;">Angular</button>
+     <button class="btn btn-success" style="width: 100px;">Java</button>
+   </div>
+
+    <div class="col-xs-12 col-sm-6" style="padding: 3%;">
+      <h4><strong>Meetup Pref:</strong> Coffee</h4>
+      <h4><strong>Education:</strong> Glasgow University</h4>
+      <h4><strong>Interests:</strong></h4>
+      <ul>
+        <li>Running</li>
+        <li>Golf</li>
+        <li>Gaming</li>
+      </ul>
+    </div>
+
+  </div>
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey text-center" align="center">
+      <p><span class="glyphicon glyphicon-map-marker"></span>Glasgow</p>
+      <p><span class="glyphicon glyphicon-phone"></span>07885411111</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> users@company.com</p>
+</div>
+
+<!-- Add Google Maps -->
+<div id="googleMap" style="height:200px;width:100%;"></div>
+<script>
+function myMap() {
+var myCenter = new google.maps.LatLng(55.861211, -4.254315);
+var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+marker.setMap(map);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvUUvn-N0ioRjpTgijTATOFXWC8e7kA-g&callback=myMap"></script>
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+  </a>
+  <p>Networx</p>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
+</html>
