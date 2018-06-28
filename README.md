@@ -17,6 +17,7 @@ The server should now be running on localhost:8000
 
 ### Color Scheme
 
+Background - #d3d3d3<br>
 Blue - #67AECA<br>
 Amethyst - #675682<br>
 Jewel - #5F0F4E<br>

@@ -1,38 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <!-- Theme Made By www.w3schools.com - No Copyright -->
-  <title>Profile Page</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+{% extends 'base.html' %}
+{% load staticfiles %}
 
-  <link rel="stylesheet" type="text/css" href="/static/css/profile.css">
+{% block title_block %}
+{% endblock %}
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+{% block css_block %}
+<link rel="stylesheet" type="text/css" href="/static/css/profile.css">
+{% endblock %}
 
-  <style>
 
-  body {
-    background-color: #d3d3d3;
-  }
-
-  h3 {
-   color: #d3d3d3;
-   font-size: 20px;
-  }
-
-  h4 {
-    color: #5F0F4E;
-  }
-
-  </style>
-
-</head>
-
-<body id="profilePage">
-
+{% block body_block %}
   <div class="row" id="header">
 
     <div class="col-xs-12 col-sm-2" id="avatarImage">
@@ -93,31 +70,27 @@
 
   </div>
 
-<!-- Container (Contact Section) -->
-<div id="contact" class="container-fluid bg-grey text-center" align="center" style="padding: 2%;">
-      <p><span class="glyphicon glyphicon-map-marker"></span>Glasgow</p>
-      <p><span class="glyphicon glyphicon-phone"></span>07885411111</p>
-      <p><span class="glyphicon glyphicon-envelope"></span> users@company.com</p>
-</div>
+  <!-- Container (Contact Section) -->
+  <div id="contact" class="container-fluid bg-grey text-center" align="center" style="padding: 2%;">
+        <p><span class="glyphicon glyphicon-map-marker"></span>Glasgow</p>
+        <p><span class="glyphicon glyphicon-phone"></span>07885411111</p>
+        <p><span class="glyphicon glyphicon-envelope"></span> users@company.com</p>
+  </div>
 
-<!-- Add Google Maps -->
-<div id="googleMap" style="height:200px;width:100%;"></div>
-<script>
-function myMap() {
-var myCenter = new google.maps.LatLng(55.861211, -4.254315);
-var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
-var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+  <!-- Add Google Maps -->
+  <div id="googleMap" style="height:200px;width:100%;"></div>
+  <script>
+  function myMap() {
+  var myCenter = new google.maps.LatLng(55.861211, -4.254315);
+  var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
+  var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
 
-marker.setMap(map);
-}
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvUUvn-N0ioRjpTgijTATOFXWC8e7kA-g&callback=myMap"></script>
+  marker.setMap(map);
+  }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvUUvn-N0ioRjpTgijTATOFXWC8e7kA-g&callback=myMap"></script>
 
-<footer class="container-fluid text-center" style="padding: 2%;">
-  <a href="#myPage" title="To Top">
-  </a>
-  <h4>Networx 2018</ph4
-</footer>
+{% endblock %}
 
-</body>
-</html>
+{% block footer_block %}
+{% endblock %}
