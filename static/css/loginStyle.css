@@ -1,0 +1,20 @@
+body {
+  background-color: #d3d3d3;
+}
+
+h1{
+   color: #d3d3d3;
+}
+
+h3 {
+ font-size: 20px;
+}
+
+h4 {
+  color: #5F0F4E;
+}
+
+#header{
+  background-color: #5F0F4E;
+  color: #d3d3d3;
+}

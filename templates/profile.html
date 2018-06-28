@@ -15,7 +15,7 @@
   <div class="row" id="header">
 
     <div class="col-xs-12 col-sm-2" id="avatarImage">
-	     <img class="img-rounded img-responsive" src="pictures/avatar-female.png" alt="Profile Image " style="width:150px;height:150px;">
+	     <img class="img-rounded img-responsive" src="{% static  "media/avatar-female.png" %}" alt="Profile Image " style="width:150px;height:150px;">
     </div>
 
     <div class="col-xs-12 col-sm-7" id="personDetails">
@@ -92,7 +92,4 @@
   </script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvUUvn-N0ioRjpTgijTATOFXWC8e7kA-g&callback=myMap"></script>
 
-{% endblock %}
-
-{% block footer_block %}
 {% endblock %}
