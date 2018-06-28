@@ -4,7 +4,7 @@ class User(models.Model):
     sid = models.CharField(unique=True, max_length=50)
     name = models.CharField(max_length=200)
     location = models.CharField(max_length=200)
-    floor = models.IntegerField()
+    floor = models.IntegerField(default=0)
     skills = models.ManyToManyField('Skills')
 
     def __str__(self):
