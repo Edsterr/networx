@@ -1,61 +1,20 @@
-html{
-    padding: 0;
-    font-family: sans-serif;
-}
-#big_header{
-    display: block;
-    align-self: center;
-    padding-left: 42%;
+body {
+  background-color: #d3d3d3;
 }
 
-.main{
-    position: absolute;
-    display: block;
-    align-self: center;
-    padding-left: 40%;
+h1{
+   color: #d3d3d3;
 }
 
-h3{
-    align-self: center;
-    padding-left: 45%;
+h3 {
+ font-size: 20px;
 }
 
-.login{
-    position: relative;
-    align-self: center;
+h4 {
+  color: #5F0F4E;
 }
 
-#username_box{
-    position: relative;
-    padding-bottom:4%;
-}
-
-#password_box{
-    position: relative;
-    padding-bottom: 4%;
-}
-
-#ubox,#pbox{
-    position: relative;
-    width: 150%;
-    border-color: #67AECA;
-    border-style: groove;
-}
-
-.signup{
-    position: relative;
-    align-self: center;
-    margin-top: 30%;
-}
-
-#login_btn{
-    position: relative;
-    align-self: center;
-    margin-left: 44%;
-}
-
-#signup_btn{
-    position: relative;
-    align-self: center;
-    margin-left: 44%;
+#header{
+  background-color: #5F0F4E;
+  color: #d3d3d3;
 }
