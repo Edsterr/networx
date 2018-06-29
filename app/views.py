@@ -10,14 +10,13 @@ def login(request):
     return render(request, 'login.html', {})
 
 def search(request):
-	users = Users.objects
-	contextDict = {'users': []}
-	
-	for item in users:
-		contextDict['users'] += [
-			{'sid': item.sid, 'name': item.name, 'location': item.location, 'floor': item.floor}]
-
-	return render(request, 'search.html', context=contextDict)
+    users = User.objects.all()
+    contextDict = {'users': []}
+    for item in users:
+        contextDict['users'] += [{'sid': item.sid, 'name': item.name, 'location': item.location, 'floor': item.floor}]
+    # for i in contextDict:
+    #     print(i)
+    return render(request, 'search.html', context=contextDict)
 
 def profile(request):
 	return render(request, 'profile.html')
