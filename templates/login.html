@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load staticfiles %}
 <html>
 <head>
   <title>Login</title>
@@ -25,7 +26,7 @@
 
 <form action="/action_page.php">
   <div class="imgcontainer">
-    <img src="pictures/login-avatar.png" alt="Avatar" class="avatar" style="width: 150px; height: 150px;">
+    <img src="{% static "media/login-avatar.png" %} " alt="Avatar" class="avatar" style="width: 150px; height: 150px;">
   </div>
 
   <div class="container" style="width: 50%;">

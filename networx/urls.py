@@ -25,7 +25,7 @@ urlpatterns = [
     path('login/', views.login, name='login'),
     path('login/register', views.register, name='register'),
     path('search/', views.search, name='search'),
-    path('profile/', views.profile_id_func, name='profile'),
+    path('profile/', views.profile, name='profile'),
     path('profile/<int:profile_id>/', views.profile_id_func, name='profile_id_func'),
     path('register/', views.register, name='register'),
     path('admin/', admin.site.urls),
